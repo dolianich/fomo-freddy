@@ -1,12 +1,10 @@
 import './App.css';
-import Logo from './components/Logo/Logo';
-import Avatar from './components/Logo/Avatar/Avatar';
+import TopBar from './components/TopBar/TopBar';
 
 function App() {
   return (
     <>
-      <Avatar />
-      <Logo />
+      <TopBar />
     </>
   );
 }
