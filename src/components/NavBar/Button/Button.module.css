@@ -1,0 +1,20 @@
+
+.btn{
+    cursor: pointer;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.btn p{
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-family: 'Patrick Hand SC';
+    font-weight: 400;
+    margin: 0;
+}
