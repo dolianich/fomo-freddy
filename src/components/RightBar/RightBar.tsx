@@ -2,6 +2,7 @@ import styles from './RightBar.module.css';
 import Sticker from './Sticker/Sticker';
 import Banner from './Banner/Banner';
 import Error from './Error/Error';
+import Pencil from './Pencil/Pencil';
 
 const RightBar = () => {
   return (
@@ -9,6 +10,7 @@ const RightBar = () => {
       <Sticker />
       <Banner />
       <Error />
+      <Pencil />
     </div>
   );
 };
