@@ -7,9 +7,9 @@ const MainSection = () => {
   return (
     <div className={styles.screen}>
       <LeftBar />
-      <div>
+      <div className={styles.content}>
         <NavBar />
-        <div></div>
+        <div className={styles.container}></div>
       </div>
       <RightBar />
     </div>
