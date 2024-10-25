@@ -18,3 +18,11 @@
     font-weight: 400;
     margin: 0;
 }
+
+.btn:hover .animation{
+    transform: scale(1.15);
+}
+
+.animation{
+    transition: transform 100ms ease-in-out;
+}
