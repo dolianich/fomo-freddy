@@ -2,13 +2,12 @@
   background-color: #DAE3F7;
   background-image: url(./assets/bg.svg);
   background-size: cover;
-  height: 100vh;
 }
 
 
 body {
   margin: 24px;
   display: flex;
-  height: 100dvh;
+  height: 100vh;
 }
 

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
-    justify-content: space-between;
     width: 100%;
+    height: 100%;
 }
 
 .content{
@@ -15,6 +15,6 @@
 
 .container{
     background-color: #BBC8E5;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex: 1;
 }
