@@ -13,7 +13,7 @@ const NavBar = () => {
       <Button content={play} text="Play" />
       <Button content={token} text="Token" />
       <Button content={memes} text="Memes" />
-      <Button content={degens} text="Degens" />
+      <Button content={degens} text="Frens" />
     </div>
   );
 };
