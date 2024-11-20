@@ -45,7 +45,7 @@
     width: 100%;
     border: none;
     border-radius: 6px;
-    background-color: #FF5E89;
+    background-color: #E85EFF;
     margin: 0;
     cursor: pointer;
 }
@@ -62,9 +62,9 @@
 
 @keyframes button {
     0% {
-        transform: scale(0.94);
+        transform: scale(1);
     }
     100% {
-        transform: scale(1.2);
+        transform: scale(1.3);
     }
 }

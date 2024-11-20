@@ -18,7 +18,7 @@ const Description = () => {
           <br />
           have fun and support each other
         </p>
-        <button><p>CLICK HERE</p></button>
+        <button><p>JOIN US</p></button>
       </div>
     </div>
   );
