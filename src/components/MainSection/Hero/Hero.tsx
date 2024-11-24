@@ -9,7 +9,9 @@ const Hero = () => {
         <Description />
         <Card />
       </div>
-      <div className={styles.partners}></div>
+      <div className={styles.quote}>
+        <div className={styles.text}><p>"anxiety and fun"</p></div>
+      </div>
     </div>
   );
 };
