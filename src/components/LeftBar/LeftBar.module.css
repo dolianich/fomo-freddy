@@ -5,3 +5,12 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 1200px) {
+   .wrapper{
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+   }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 1200px) {
+   .arrow{
+    transform: rotate(-90deg);
+   }
+}

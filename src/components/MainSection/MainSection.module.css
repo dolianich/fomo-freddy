@@ -17,3 +17,9 @@
     display: flex;
     flex: 1;
 }
+
+@media (max-width: 1200px) {
+    .screen{
+        flex-direction: column-reverse;
+    }
+}

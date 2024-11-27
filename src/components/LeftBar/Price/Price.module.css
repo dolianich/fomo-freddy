@@ -1,4 +1,4 @@
-.container{
+.wrapper{
     display: flex;
     flex-direction: column;
 }
@@ -10,3 +10,15 @@
 .animation{
     margin-top: -50px;
 }
+
+@media (max-width: 1200px) {
+    .wrapper{
+        flex-direction: row;
+    }
+    .animation{
+        margin-top: 0;
+    }
+    .image{
+        display: none;
+    }
+  }
