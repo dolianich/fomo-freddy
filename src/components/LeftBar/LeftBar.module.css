@@ -14,3 +14,11 @@
     justify-content: center;
    }
 }
+
+@media (max-width: 760px) {
+    .wrapper{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+ }

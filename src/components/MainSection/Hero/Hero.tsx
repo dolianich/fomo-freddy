@@ -10,7 +10,7 @@ const Hero = () => {
         <Card />
       </div>
       <div className={styles.quote}>
-        <div className={styles.text}><p>"anxiety and fun"</p></div>
+        <div className={styles.text}><p>anxiety and fun</p></div>
       </div>
     </div>
   );

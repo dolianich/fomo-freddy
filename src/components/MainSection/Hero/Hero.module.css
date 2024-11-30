@@ -48,3 +48,9 @@
     font-weight: 400;
     margin: 10;
 }
+
+@media (max-width: 760px) {
+    .cards{
+        flex-direction: column;
+    }
+ }
