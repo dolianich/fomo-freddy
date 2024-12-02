@@ -6,12 +6,30 @@
     justify-content: space-between;
 }
 
+.card{
+    display: flex;
+}
+
 @media (max-width: 1200px) {
    .wrapper{
     flex-direction: row;
     width: 100%;
     gap: 40px;
     justify-content: center;
+    background-image: url(../../../src//assets/nftBg.svg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 20px;
+   }
+
+   .card{
+    background-color: #FFFFFF;
+    border-radius: 38px;
    }
 }
 

@@ -5,10 +5,12 @@ import Pill from './Pill/Pill';
 
 const LeftBar = () => {
   return (
-    <div className={styles.wrapper}>
-      <Price />
-      <Arrow />
-      <Pill />
+    <div className={styles.card}>
+      <div className={styles.wrapper}>
+        <Price />
+        <Arrow />
+        <Pill />
+      </div>
     </div>
   );
 };
