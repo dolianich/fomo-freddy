@@ -4,4 +4,11 @@
     background-color: #CAD3E7;
     border-radius: 200px;
     overflow: hidden;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.container:active{
+    transform: scale(0.95);
 }
