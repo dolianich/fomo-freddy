@@ -1,0 +1,50 @@
+.wrapper{
+    display: none;
+}
+
+.menuNone{
+    display: none;
+}
+
+.menuContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #DAE3F7;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.9s linear;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 279px;
+}
+
+@media (max-width: 630px) {
+    .wrapper{
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .wrapper button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 100px;
+        padding: 12px;
+        background-color: #CAD3E7;
+    }
+ }

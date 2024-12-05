@@ -4,6 +4,7 @@
     width: 200px;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .card{
