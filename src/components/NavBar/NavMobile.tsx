@@ -17,16 +17,30 @@ const NavMobile = () => {
     <>
       <div className={styles.wrapper}>
         <button onClick={() => openMenu()}>
-          {isOpen ? <X size={28} /> : <List size={28} />}
+          {isOpen ? (
+            <X size={28} color="#000000" />
+          ) : (
+            <List size={28} color="#000000" />
+          )}
         </button>
       </div>
       <div className={isOpen ? styles.menuContainer : styles.menuNone}>
         <div className={styles.menu}>
-          <Button content={home} text="Home" />
-          <Button content={play} text="Play" />
-          <Button content={token} text="Token" />
-          <Button content={memes} text="Memes" />
-          <Button content={degens} text="Frens" />
+          <a href="/">
+            <Button content={home} text="Home" />
+          </a>
+          <a href="/game">
+            <Button content={play} text="Game" />
+          </a>
+          <a href="/token">
+            <Button content={token} text="Token" />
+          </a>
+          <a href="/memes">
+            <Button content={memes} text="Memes" />
+          </a>
+          <a href="/frens">
+            <Button content={degens} text="Frens" />
+          </a>
         </div>
       </div>
     </>

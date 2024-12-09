@@ -2,6 +2,7 @@
   background-color: #DAE3F7;
   background-image: url(./assets/bg.svg);
   background-size: cover;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
