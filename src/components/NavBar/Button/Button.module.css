@@ -9,6 +9,7 @@
     justify-content: center;
     background: none;
     -webkit-tap-highlight-color: transparent;
+    padding: 0;
 }
 
 .btn p{

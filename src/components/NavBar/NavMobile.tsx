@@ -39,8 +39,10 @@ const NavMobile = () => {
             <NavLink
               key={button.id}
               to={button.link}
-              className={styles.nav}
               onClick={() => openMenu()}
+              className={({ isActive }) => {
+                return isActive ? styles.active : styles.static;
+              }}
             >
               <Button content={button.content} text={button.text} />
             </NavLink>

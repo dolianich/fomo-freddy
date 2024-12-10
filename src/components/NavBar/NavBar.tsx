@@ -22,9 +22,11 @@ const NavBar = () => {
         <NavLink
           key={button.id}
           to={button.link}
-          className={styles.nav}
+          className={({ isActive }) => {
+            return isActive ? styles.active : styles.static;
+          }}
         >
-          <Button content={button.content} text={button.text}/>
+          <Button content={button.content} text={button.text} />
         </NavLink>
       ))}
     </div>

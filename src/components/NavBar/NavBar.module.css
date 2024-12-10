@@ -10,8 +10,15 @@
     text-decoration: none;
 }
 
+.active{
+    background-image: url(../../assets/navBg.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
 
-
+.static{
+    background-color: transparent;
+}
 
 @media (max-width: 630px) {
     .navbar{
