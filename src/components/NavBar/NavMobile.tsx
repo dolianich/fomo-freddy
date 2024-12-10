@@ -7,11 +7,20 @@ import play from '../../assets/animations/play.json';
 import token from '../../assets/animations/token.json';
 import memes from '../../assets/animations/memes.json';
 import degens from '../../assets/animations/degens.json';
+import { NavLink } from 'react-router-dom';
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => setIsOpen(!isOpen);
+
+  const buttons = [
+    { id: 1, text: 'Home', content: home, link: '/' },
+    { id: 2, text: 'Game', content: play, link: '/game' },
+    { id: 3, text: 'Token', content: token, link: '/token' },
+    { id: 4, text: 'Memes', content: memes, link: '/memes' },
+    { id: 5, text: 'Frens', content: degens, link: '/frens' },
+  ];
 
   return (
     <>
@@ -26,21 +35,16 @@ const NavMobile = () => {
       </div>
       <div className={isOpen ? styles.menuContainer : styles.menuNone}>
         <div className={styles.menu}>
-          <a href="/">
-            <Button content={home} text="Home" />
-          </a>
-          <a href="/game">
-            <Button content={play} text="Game" />
-          </a>
-          <a href="/token">
-            <Button content={token} text="Token" />
-          </a>
-          <a href="/memes">
-            <Button content={memes} text="Memes" />
-          </a>
-          <a href="/frens">
-            <Button content={degens} text="Frens" />
-          </a>
+          {buttons.map((button) => (
+            <NavLink
+              key={button.id}
+              to={button.link}
+              className={styles.nav}
+              onClick={() => openMenu()}
+            >
+              <Button content={button.content} text={button.text} />
+            </NavLink>
+          ))}
         </div>
       </div>
     </>

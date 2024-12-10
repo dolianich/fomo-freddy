@@ -9,7 +9,7 @@ interface Props {
 const Button = ({ content, text }: Props) => {
   return (
     <button className={styles.btn}>
-      <Lottie animationData={content} className={styles.animation}/>
+      <Lottie animationData={content} className={styles.animation} />
       <p>{text}</p>
     </button>
   );
