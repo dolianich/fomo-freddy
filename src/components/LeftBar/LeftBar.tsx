@@ -3,9 +3,13 @@ import Price from './Price/Price';
 import Arrow from './Arrow/Arrow';
 import Pill from './Pill/Pill';
 
-const LeftBar = () => {
+interface Props {
+  click?: () => void;
+}
+
+const LeftBar = ({ click }: Props) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={click}>
       <div className={styles.wrapper}>
         <Price />
         <Arrow />
