@@ -1,10 +1,8 @@
+import Lottie from 'lottie-react';
+import pill from '../../../assets/animations/PillNFT.json';
 
 const FreeNFT = () => {
-  return (
-    <div>
-      Mint Free NFT
-    </div>
-  )
-}
+  return <Lottie animationData={pill} />;
+};
 
-export default FreeNFT
+export default FreeNFT;
