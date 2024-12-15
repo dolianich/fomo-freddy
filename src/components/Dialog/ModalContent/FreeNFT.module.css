@@ -1,0 +1,14 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.animation{
+    width: 300px;
+    height: 300px;
+}
