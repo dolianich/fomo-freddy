@@ -29,3 +29,7 @@
     background-color: #000000;
     color: #FFFFFF
 }
+
+.btn:focus{
+    outline: none;
+}
