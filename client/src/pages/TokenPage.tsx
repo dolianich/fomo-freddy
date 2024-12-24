@@ -1,10 +1,13 @@
+import HomeButton from '../components/HomeButton/HomeButton';
+import styles from './styles/TokenPage.module.css';
 
 const TokenPage = () => {
   return (
     <div>
-        Token 
+      <HomeButton />
+      <div className={styles.content}></div>
     </div>
-  )
-}
+  );
+};
 
-export default TokenPage
+export default TokenPage;

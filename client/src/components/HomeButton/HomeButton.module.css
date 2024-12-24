@@ -1,0 +1,37 @@
+.btn{
+    text-decoration: none;
+    padding: 8px;
+    background-color: #CAD3E7;
+    display: flex;
+    width: max-content;
+    border-radius: 14px;
+}
+
+.btn p{
+    cursor: pointer;
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: #536A9C;
+    -webkit-tap-highlight-color: transparent;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 12px;
+    padding-left: 4px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Gabarito';
+    font-weight: 400;
+    margin: 0;
+    border-radius: 6px;
+}
+
+@media (max-width: 630px) {
+    .btn{
+        display: none;
+    }
+ }
