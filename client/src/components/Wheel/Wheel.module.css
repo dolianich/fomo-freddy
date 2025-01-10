@@ -5,7 +5,7 @@
     height: 548px;
     width: 548px;
     border-radius: 50%;
-    border: 30px solid #FF785E;
+    border: 30px solid #536A9C;
     transform: scale(0.8);
     margin: -54.8px;
 }
@@ -124,7 +124,7 @@
     width: 80px;
     border-radius: 50%;
     border: none;
-    background-color: #FF785E;
+    background-color: #536A9C;
 }
 
 .spin::before{
@@ -134,7 +134,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 15px 30px 15px;
-    border-color: transparent transparent #FF785E transparent;
+    border-color: transparent transparent #536A9C transparent;
     top: -130px;
     left: calc(50% - 15px);
     transform: rotate(180deg);
@@ -148,7 +148,7 @@
 @media (max-width: 470px) {
     .mainWidget{
         transform: scale(0.6);
-        border: 34px solid #FF785E;
+        border: 34px solid #536A9C;
         margin: -109.6px;
     }
 }
