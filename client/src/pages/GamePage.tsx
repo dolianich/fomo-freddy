@@ -1,10 +1,14 @@
-import Wheel from '../components/Wheel/Wheel';
 import styles from './styles/BasicPage.module.css';
+import HomeButton from '../components/HomeButton/HomeButton';
+import GameDescription from '../components/GameDescription/GameDescription';
 
 const GamePage = () => {
   return (
-    <div className={styles.content}>
-      <Wheel />
+    <div>
+      <HomeButton />
+      <div className={styles.content}>
+        <GameDescription />        
+      </div>
     </div>
   );
 };
