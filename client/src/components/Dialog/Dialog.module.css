@@ -9,3 +9,11 @@
     background-color: #000000;
     opacity: 0.6;
   }
+
+@media (max-width: 470px) {
+    .mainWidget{
+        transform: scale(0.6);
+        border: 34px solid #536A9C;
+        margin: -109.6px;
+    }
+}

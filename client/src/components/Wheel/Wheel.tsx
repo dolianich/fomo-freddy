@@ -2,6 +2,7 @@ import styles from './Wheel.module.css';
 import { useRef } from 'react';
 import Dialog from '../Dialog/Dialog';
 import { useState } from 'react';
+import moon from '../../assets/moon.svg';
 
 const Wheel = () => {
   const info = [
@@ -79,28 +80,20 @@ const Wheel = () => {
     <div className={styles.mainWidget}>
       <div ref={wheelRef} className={styles.wheel}>
         <span className={styles.first}>
-          <b>1</b>
         </span>
         <span className={styles.second}>
-          <b>2</b>
         </span>
         <span className={styles.third}>
-          <b>3</b>
         </span>
         <span className={styles.fourth}>
-          <b>4</b>
         </span>
         <span className={styles.fifth}>
-          <b>5</b>
         </span>
         <span className={styles.sixth}>
-          <b>6</b>
         </span>
         <span className={styles.seventh}>
-          <b>7</b>
         </span>
         <span className={styles.eighth}>
-          <b>8</b>
         </span>
       </div>
       <button className={styles.spin} onClick={spinWheel}></button>

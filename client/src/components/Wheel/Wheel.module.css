@@ -110,9 +110,9 @@
     transform: rotate(calc(45deg * 8)) translate(0, -122px);
 }
 
-.wheel span b {
+.wheel span img {
     position: absolute;
-    transform: translate(-50%, -180px);
+    transform: translate(12%, -148px) scale(0.32);
 }
 
 .spin{
@@ -124,7 +124,9 @@
     width: 80px;
     border-radius: 50%;
     border: none;
-    background-color: #536A9C;
+    background-image: url('./../../assets/btnBg.svg');
+    background-size: cover;
+    background-position: center center;
 }
 
 .spin::before{
