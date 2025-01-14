@@ -22,7 +22,7 @@ const Wheel = () => {
     {
       title: 'Rug Pull',
       description: "You've lost all your investments in this Gem project",
-      img: hack,
+      img: rug,
     },
     { title: 'Bull Run', description: 'Crypto market is going up', img: bull },
     {
@@ -43,7 +43,7 @@ const Wheel = () => {
     {
       title: 'Hacked',
       description: "You've connected your wallet to the wrong website",
-      img: rug,
+      img: hack,
     },
     {
       title: 'NFT Boom',
