@@ -3,34 +3,51 @@ import { useRef } from 'react';
 import Dialog from '../Dialog/Dialog';
 import { useState } from 'react';
 import moon from '../../assets/moon.svg';
+import rug from '../../assets/rug.svg';
+import bull from '../../assets/bull.svg';
+import bear from '../../assets/bear.svg';
+import boom from '../../assets/boom.svg';
+import airdrop from '../../assets/airdrop.svg';
+import whale from '../../assets/whale.svg';
+import hack from '../../assets/hack.svg';
 
 const Wheel = () => {
   const info = [
     {
       title: 'Moon Shot',
       description: 'Rise in the price of all your crypto-assets',
+      img: moon,
     },
     {
       title: 'Rug Pull',
       description: "You've lost all your investments in this Gem project",
+      img: rug,
     },
-    { title: 'Bull Run', description: 'Crypto market is going up' },
-    { title: 'Whales Dump', description: 'Big guys sell, your assets go down' },
+    { title: 'Bull Run', description: 'Crypto market is going up', img: bull },
+    {
+      title: 'Whales Dump',
+      description: 'Big guys sell, your assets go down',
+      img: whale,
+    },
     {
       title: 'Bear Market',
       description: 'The market situation is still the same',
+      img: bear,
     },
     {
       title: 'Air Drop',
       description: "You've received a ton of money for being active",
+      img: airdrop,
     },
     {
       title: 'Hacked',
       description: "You've connected your wallet to the wrong website",
+      img: hack,
     },
     {
       title: 'NFT Boom',
       description: 'Huge increase in the value of all your JPEGs',
+      img: boom,
     },
   ];
 
@@ -79,22 +96,14 @@ const Wheel = () => {
   return (
     <div className={styles.mainWidget}>
       <div ref={wheelRef} className={styles.wheel}>
-        <span className={styles.first}>
-        </span>
-        <span className={styles.second}>
-        </span>
-        <span className={styles.third}>
-        </span>
-        <span className={styles.fourth}>
-        </span>
-        <span className={styles.fifth}>
-        </span>
-        <span className={styles.sixth}>
-        </span>
-        <span className={styles.seventh}>
-        </span>
-        <span className={styles.eighth}>
-        </span>
+        <span className={styles.first}></span>
+        <span className={styles.second}></span>
+        <span className={styles.third}></span>
+        <span className={styles.fourth}></span>
+        <span className={styles.fifth}></span>
+        <span className={styles.sixth}></span>
+        <span className={styles.seventh}></span>
+        <span className={styles.eighth}></span>
       </div>
       <button className={styles.spin} onClick={spinWheel}></button>
       <Dialog toggleDialog={toggleDialog} ref={dialogRef}>
