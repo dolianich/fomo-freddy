@@ -1,6 +1,7 @@
 import styles from './Wheel.module.css';
 import { useRef } from 'react';
 import Dialog from '../Dialog/Dialog';
+import WheelContent from '../Dialog/WheelContent/WheelContent';
 import { useState } from 'react';
 import moon from '../../assets/moon.svg';
 import rug from '../../assets/rug.svg';
@@ -21,7 +22,7 @@ const Wheel = () => {
     {
       title: 'Rug Pull',
       description: "You've lost all your investments in this Gem project",
-      img: rug,
+      img: hack,
     },
     { title: 'Bull Run', description: 'Crypto market is going up', img: bull },
     {
@@ -42,7 +43,7 @@ const Wheel = () => {
     {
       title: 'Hacked',
       description: "You've connected your wallet to the wrong website",
-      img: hack,
+      img: rug,
     },
     {
       title: 'NFT Boom',
@@ -79,16 +80,52 @@ const Wheel = () => {
         deg %= 360;
       }
       let title = '';
-      if (deg >= 337 || deg < 22) title = info[0].title;
-      if (deg >= 22 && deg < 67) title = info[1].title;
-      if (deg >= 67 && deg < 112) title = info[2].title;
-      if (deg >= 112 && deg < 157) title = info[3].title;
-      if (deg >= 157 && deg < 202) title = info[4].title;
-      if (deg >= 202 && deg < 247) title = info[5].title;
-      if (deg >= 247 && deg < 292) title = info[6].title;
-      if (deg >= 292 && deg < 337) title = info[7].title;
+      let description = '';
+      let img;
+      if (deg >= 337 || deg < 22) {
+        title = info[0].title;
+        description = info[0].description;
+        img = info[0].img;
+      }
+      if (deg >= 22 && deg < 67) {
+        title = info[1].title;
+        description = info[1].description;
+        img = info[1].img;
+      }
+      if (deg >= 67 && deg < 112) {
+        title = info[2].title;
+        description = info[2].description;
+        img = info[2].img;
+      }
+      if (deg >= 112 && deg < 157) {
+        title = info[3].title;
+        description = info[3].description;
+        img = info[3].img;
+      }
+      if (deg >= 157 && deg < 202) {
+        title = info[4].title;
+        description = info[4].description;
+        img = info[4].img;
+      }
+      if (deg >= 202 && deg < 247) {
+        title = info[5].title;
+        description = info[5].description;
+        img = info[5].img;
+      }
+      if (deg >= 247 && deg < 292) {
+        title = info[6].title;
+        description = info[6].description;
+        img = info[6].img;
+      }
+      if (deg >= 292 && deg < 337) {
+        title = info[7].title;
+        description = info[7].description;
+        img = info[7].img;
+      }
 
-      setDialogContent(title);
+      setDialogContent(
+        <WheelContent img={img!} title={title} description={description} />
+      );
       toggleDialog();
     }, 5000);
   };
