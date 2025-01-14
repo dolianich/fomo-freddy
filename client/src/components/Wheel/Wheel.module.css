@@ -127,6 +127,7 @@
     background-image: url('./../../assets/btnBg.svg');
     background-size: cover;
     background-position: center center;
+    cursor: pointer;
 }
 
 .spin::before{
