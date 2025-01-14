@@ -56,6 +56,8 @@ const Wheel = () => {
 
   const [dialogContent, setDialogContent] = useState<React.ReactNode>(null);
 
+  const [spin, setSpin] = useState(false);
+
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const toggleDialog = () => {
@@ -70,6 +72,8 @@ const Wheel = () => {
   const spinWheel = () => {
     const x = 1024;
     const y = 9999;
+
+    setSpin(true);
 
     let deg = Math.floor(Math.random() * (x - y)) + y;
 
@@ -127,6 +131,7 @@ const Wheel = () => {
         <WheelContent img={img!} title={title} description={description} />
       );
       toggleDialog();
+      setSpin(false);
     }, 5000);
   };
 
@@ -142,7 +147,11 @@ const Wheel = () => {
         <span className={styles.seventh}></span>
         <span className={styles.eighth}></span>
       </div>
-      <button className={styles.spin} onClick={spinWheel} ></button>
+      <button
+        className={styles.spin}
+        onClick={spinWheel}
+        disabled={spin === true ? true : false}
+      ></button>
       <Dialog toggleDialog={toggleDialog} ref={dialogRef}>
         {dialogContent}
       </Dialog>
