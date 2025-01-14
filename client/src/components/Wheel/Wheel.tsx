@@ -142,7 +142,7 @@ const Wheel = () => {
         <span className={styles.seventh}></span>
         <span className={styles.eighth}></span>
       </div>
-      <button className={styles.spin} onClick={spinWheel}></button>
+      <button className={styles.spin} onClick={spinWheel} ></button>
       <Dialog toggleDialog={toggleDialog} ref={dialogRef}>
         {dialogContent}
       </Dialog>
