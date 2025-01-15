@@ -6,8 +6,21 @@
     margin-top: 24px;
 }
 
+.memes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 24px;
+    width: 100%;
+    margin-top: 24px;
+}
+
 @media (max-width: 630px) {
     .content{
+        margin-top: 64px;
+    }
+    .memes{
         margin-top: 64px;
     }
  }
