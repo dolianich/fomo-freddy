@@ -132,7 +132,7 @@ const Wheel = () => {
       );
       toggleDialog();
       setSpin(false);
-    }, 5000);
+    }, 5300);
   };
 
   return (
