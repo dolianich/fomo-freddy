@@ -39,7 +39,10 @@
     margin: 0;
 }
 
-.content button{
+.content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     width: 100%;
     border: none;
@@ -47,9 +50,10 @@
     background-color: #E85EFF;
     margin: 0;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.content button p{
+.content a p{
     color: #FFFFFF;
     text-align: center;
     font-size: 32px;

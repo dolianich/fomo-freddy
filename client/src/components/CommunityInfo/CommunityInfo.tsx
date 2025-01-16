@@ -11,7 +11,7 @@ const CommunityInfo = () => {
           <br />
           where every pigeon make sense
         </p>
-        <button>JOIN</button>
+        <a href='https://t.me/fomofreddy'>JOIN</a>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const Description = () => {
           FREDDY
         </h1>
         <p>
-          anxious pegeon
+          anxious pigeon
           <br />
           is building a community-drivven
           <br />
@@ -18,7 +18,7 @@ const Description = () => {
           <br />
           have fun and support each other
         </p>
-        <button><p>JOIN US</p></button>
+        <a href='https://t.me/fomofreddy'><p>JOIN US</p></a>
       </div>
     </div>
   );
